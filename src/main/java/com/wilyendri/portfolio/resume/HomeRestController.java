@@ -1,7 +1,7 @@
-package com.wilyendri.portfolio.layers;
+package com.wilyendri.portfolio.resume;
 
 import org.springframework.web.bind.annotation.*;
-import com.wilyendri.portfolio.layers.ServiceBook.NewBookRequest;
+import com.wilyendri.portfolio.resume.ServiceBook.NewBookRequest;
 
 import java.util.List;
 

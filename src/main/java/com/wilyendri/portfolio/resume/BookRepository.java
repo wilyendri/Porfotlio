@@ -1,4 +1,4 @@
-package com.wilyendri.portfolio.layers;
+package com.wilyendri.portfolio.resume;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
