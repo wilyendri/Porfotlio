@@ -1,4 +1,4 @@
-package com.wilyendri.portfolio.layers;
+package com.wilyendri.portfolio.resume;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
