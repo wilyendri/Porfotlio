@@ -34,6 +34,11 @@ body {
     padding: 15px;
     border-top: 1px solid #777;
 }
+
+.social-icon {
+    text-decoration: none;
+}
+
 .education-item, .experience-item {
     margin-bottom: 15px;
 }
@@ -67,14 +72,14 @@ body {
 
 /* Style project links */
 .projectClass a {
-    color: #ffd700; /* Muted gold color */
+    color: #FFD70080; /* Muted Gold */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Make the links bold for better visibility */
 }
 
 /* Change link color on hover for better user interaction */
 .projectClass a:hover {
-    color: #ffd700; /* Muted gold color on hover */
+    color: #FFD70080; /* Muted Gold */
     text-decoration: underline; /* Underline on hover */
 }
 
