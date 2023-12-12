@@ -1,1 +1,1 @@
-web: java -jar target/your-app-name.jar
+web: java -jar portfolio-0.0.1-SNAPSHOT.jar
