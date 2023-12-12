@@ -1,23 +1,12 @@
-server:
-  port: 8000
-
 spring:
-  # this is from the docker compose where username and password are created, the url will be created
   datasource:
-    url: jdbc:postgresql://localhost:5332/customer
-    username: wilyendri
-    password: 21043600
+    url: ${JAWSDB_URL}
+    username: ${JAWSDB_USERNAME}
+    password: ${JAWSDB_PASSWORD}
   jpa:
     hibernate:
-      # destroy the schema at the end of the session
-      ddl-auto: create-drop
-      # maintain the schema when session is killed or program is stopped
-#      ddl-auto: update
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
-        # Postgre dialect
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        # Format the sql
-        format_sql: true
-    #Show sql
-    show-sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
