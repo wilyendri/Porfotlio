@@ -1,4 +1,7 @@
-spring:
+  server:
+    port: ${PORT:8080}
+
+  spring:
   datasource:
     url: ${JAWSDB_URL}
     username: ${JAWSDB_USERNAME}
