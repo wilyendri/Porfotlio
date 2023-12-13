@@ -10,8 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import java.util.ArrayList;
 import java.util.List;
 
-@SpringBootApplication
-@EntityScan(basePackages = "com.wilyendri.portfolio.resume")
+@SpringBootApplication(scanBasePackages = "com.wilyendri.portfolio") // what's inside parenthesis is not necessary
 public class PortfolioApplication {
 
 	public static void main(String[] args) {
