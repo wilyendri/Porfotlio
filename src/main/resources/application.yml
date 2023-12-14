@@ -1,11 +1,16 @@
-  server:
-    port: ${PORT:8080}
+server:
+  port: ${PORT:8080}
 
-  spring:
+spring:
   datasource:
-    url: ${JAWSDB_URL}
-    username: ${JAWSDB_USERNAME}
-    password: ${JAWSDB_PASSWORD}
+    url: jdbc:mysql://ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/vvyuc5lthvryh3kt
+    username: hba8q998dabe4yzs
+    password: mpblyk8fdcoswboi
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#    url: ${JAWSDB_URL}
+#    username: ${JAWSDB_USERNAME}
+#    password: ${JAWSDB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
