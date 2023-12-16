@@ -1,4 +1,4 @@
-package com.wilyendri.portfolio.resume;
+package com.wilyendri.portfolio.booksDB;
 
 import jakarta.persistence.*;
 

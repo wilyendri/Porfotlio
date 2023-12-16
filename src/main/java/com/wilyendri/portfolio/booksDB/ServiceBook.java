@@ -1,5 +1,7 @@
-package com.wilyendri.portfolio.resume;
+package com.wilyendri.portfolio.booksDB;
 
+import com.wilyendri.portfolio.booksDB.Book;
+import com.wilyendri.portfolio.booksDB.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
