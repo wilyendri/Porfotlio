@@ -14,14 +14,23 @@
 </header>
 
 <form action="/send-email" method="post">
-    <label for="to">To:</label>
-    <input type="email" id="to" name="to" required><br>
+    <div class="mb-3">
+        <label for="from" class="form-label">Subject:</label>
+        <input type="email" class="form-control" id="from" name="from" required>
+    </div>
+    <div class="mb-3">
+        <label for="subject" class="form-label">Subject:</label>
+        <input type="text" class="form-control" id="subject" name="subject" required>
+    </div>
+    <div class="mb-3">
+        <label for="text" class="form-label">Message:</label>
+        <textarea class="form-control" id="text" name="text" rows="4" required></textarea>
+    </div>
+<!--     <label for="subject">Subject:</label>-->
+<!--    <input type="text" id="subject" name="subject" required><br>-->
 
-    <label for="subject">Subject:</label>
-    <input type="text" id="subject" name="subject" required><br>
-
-    <label for="text">Message:</label>
-    <textarea id="text" name="text" rows="4" required></textarea><br>
+<!--    <label for="text">Message:</label>-->
+<!--    <textarea id="text" name="text" rows="4" required></textarea><br>-->
 
     <button type="submit">Send Email</button>
 </form>
