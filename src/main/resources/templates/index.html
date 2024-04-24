@@ -15,17 +15,17 @@
 
 <main class="container mt-4">
     <section class="mb-4 text-center">
-        <div class="d-flex justify-content-center align-items-center flex-column">
-            <img src="/images/me.jpg" class="img-thumbnail" alt="Profile Image" style="max-width: 200px;">
+        <div class="d-flex flex-column align-items-center">
+            <img src="/images/me.jpg" class="img-thumbnail img-fluid" alt="Profile Image" style="max-width: 200px;">
             <p class="mt-2">
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseWidthExample" aria-expanded="false"
-                        aria-controls="collapseWidthExample">
+                        data-bs-target="#collapse" aria-expanded="false"
+                        aria-controls="collapse">
                     About Me
                 </button>
             </p>
         </div>
-        <div class="collapse mt-3" id="collapseWidthExample">
+        <div class="collapse mt-3" id="collapse">
             <div class="card card-body text-center" style="width: 300px; margin: 0 auto; color: gray;">
                 Hello! I'm Wilyendri Duran. I am a dedicated software developer with a strong passion for creating
                 efficient and innovative solutions. With hands-on experience in AWS services, Java programming, and
@@ -34,7 +34,7 @@
             </div>
         </div>
     </section>
-    <div class="accordion accordion-flush" id="accordionExample">
+    <div class="accordion accordion-flush" id="accordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -43,57 +43,68 @@
                     <strong>Experience</strong>
                 </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
                 <div class="accordion-body">
-                    <div class="experience-item">
-                        <h4>Revature, Boston</h4>
-                        <p>Oct 2023 – Present</p>
-                        <p><strong>Java Intern</strong></p>
-                        <ul>
-                            <li>Design and implement scalable Java Spring services, resulting in improved code
-                                modularity and maintenance across multiple projects.
-                            </li>
-                            <li>Engineer robust SQL database schemas and optimize queries, improving data retrieval
-                                times and system performance for client applications.
-                            </li>
-                            <li>Leverage Java APIs to devise algorithms addressing diverse challenges and problem sets.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h4>AWS, Boston</h4>
-                        <p>Dec 2022 – June 2023</p>
-                        <p><strong>SDE I</strong></p>
-                        <p>Sep 2022 – Dec 2022</p>
-                        <p><strong>Intern</strong></p>
-                        <ul>
-                            <li>Pioneered the implementation of CI/CD, resulting in 2x reduction in developer
-                                intervention time, empowering developers to focus on more business tasks.
-                            </li>
-                            <li>Enhanced project efficiency by developing a shared CDK package with pre-built constructs
-                                for ECS, FireLens, and CloudWatch, reducing component creation time by 15%.
-                            </li>
-                            <li>Seamlessly integrated AWS services, including ECS, Step Functions, IAM, and CloudWatch,
-                                ensuring a smooth and efficient process.
-                            </li>
-                            <li>Enhanced log and metric processing workflows by introducing a team-shared Docker image
-                                package with Fluent-Bit. Achieved a notable 20% improvement in log processing speed.
-                            </li>
-                            <li>Led the successful migration of a critical customer data validation program,
-                                transitioning it from legacy servers to AWS Storage Gateway.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="experience-item">
-                        <h4>Hack.Diversity, Boston</h4>
-                        <p>Jan 2022 – Aug 2022</p>
-                        <p><strong>2022 Hack.Diversity Fellow</strong></p>
-                        <ul>
-                            <li>Selected into 2022 Hack.Diversity Fellowship, a highly competitive career leadership and
-                                workforce development program integrating Boston’s innovation, corporate, civic,
-                                academic, and philanthropic pillars.
-                            </li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="experience-item">
+                                <h4>Revature, Boston</h4>
+                                <p>Oct 2023 – Present</p>
+                                <p><strong>Java Intern</strong></p>
+                                <ul>
+                                    <li>Design and implement scalable Java Spring services, resulting in improved code
+                                        modularity and maintenance across multiple projects.
+                                    </li>
+                                    <li>Engineer robust SQL database schemas and optimize queries, improving data
+                                        retrieval
+                                        times and system performance for client applications.
+                                    </li>
+                                    <li>Leverage Java APIs to devise algorithms addressing diverse challenges and
+                                        problem sets.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="experience-item">
+                                <h4>AWS, Boston</h4>
+                                <p>Dec 2022 – June 2023</p>
+                                <p><strong>SDE I</strong></p>
+                                <p>Sep 2022 – Dec 2022</p>
+                                <p><strong>Intern</strong></p>
+                                <ul>
+                                    <li>Pioneered the implementation of CI/CD, resulting in 2x reduction in developer
+                                        intervention time, empowering developers to focus on more business tasks.
+                                    </li>
+                                    <li>Enhanced project efficiency by developing a shared CDK package with pre-built
+                                        constructs
+                                        for ECS, FireLens, and CloudWatch, reducing component creation time by 15%.
+                                    </li>
+                                    <li>Seamlessly integrated AWS services, including ECS, Step Functions, IAM, and
+                                        CloudWatch,
+                                        ensuring a smooth and efficient process.
+                                    </li>
+                                    <li>Enhanced log and metric processing workflows by introducing a team-shared Docker
+                                        image
+                                        package with Fluent-Bit. Achieved a notable 20% improvement in log processing
+                                        speed.
+                                    </li>
+                                    <li>Led the successful migration of a critical customer data validation program,
+                                        transitioning it from legacy servers to AWS Storage Gateway.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="experience-item">
+                                <h4>Hack.Diversity, Boston</h4>
+                                <p>Jan 2022 – Aug 2022</p>
+                                <p><strong>2022 Hack.Diversity Fellow</strong></p>
+                                <ul>
+                                    <li>Selected into 2022 Hack.Diversity Fellowship, a highly competitive career
+                                        leadership and
+                                        workforce development program integrating Boston’s innovation, corporate, civic,
+                                        academic, and philanthropic pillars.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,7 +125,7 @@
                                 <li>Java</li>
                                 <li>Typescript</li>
                                 <li>Python (Basic)</li>
-                                <li>C++ </li>
+                                <li>C++</li>
                                 <li>Kotlin (Basic)</li>
                             </ul>
                         </div>
@@ -166,16 +177,17 @@
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <!--                    <strong>This is the first item's accordion body.</strong> -->
                     <section class="projectClass">
                         <ul>
-                            <li> <a href="https://github.com/practeragame/CodeWilyendri" target="_blank">
+                            <li><a href="https://github.com/practeragame/CodeWilyendri" target="_blank">
                                 Practera Virtual Internship –Advanced Java (2021):</a>
-                                Prototype of an app-based game that simulates building and launching an app in real life.
+                                Prototype of an app-based game that simulates building and launching an app in real
+                                life.
                             </li>
                             <li><a href="https://github.com/wilyendri/EmployeeDB" target="_blank">
-                                Employee Tracker – Advanced C++  (2021):</a>
-                                Program that keeps track of employee’s information by using OOP principles and QT Creator.
+                                Employee Tracker – Advanced C++ (2021):</a>
+                                Program that keeps track of employee’s information by using OOP principles and QT
+                                Creator.
                             </li>
                             <li><a href="https://github.com/wilyendri/JumperGame" target="_blank">
                                 Allien’s Game – Python (2021):</a>
@@ -252,10 +264,10 @@
             </div>
         </div>
     </div>
-<!--    <button type="button" class="btn btn-outline-primary">-->
-<!--        <a href="/send-email">Send Email</a>-->
-<!--    </button>-->
-<!--    <a class="btn btn-primary disabled" href="/send-email" role="button" aria-disabled="true">Send Email</a>-->
+    <!--    <button type="button" class="btn btn-outline-primary">-->
+    <!--        <a href="/send-email">Send Email</a>-->
+    <!--    </button>-->
+    <!--    <a class="btn btn-primary disabled" href="/send-email" role="button" aria-disabled="true">Send Email</a>-->
 </main>
 
 <footer class="text-center mt-4">
